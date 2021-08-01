@@ -15,6 +15,7 @@ public class WebSecurityConfig extends AbstractWebSecurityConfig {
 
     @Override
     protected void configure(HttpSecurity security) throws Exception {
+        System.out.println("1111111111111");
         security
             .authorizeRequests()
             .antMatchers(HttpMethod.POST, "/auth/token").permitAll();
